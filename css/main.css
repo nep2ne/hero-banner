@@ -17,10 +17,26 @@ body {
   margin: 0;
 }
 
+span {
+  background-color: rgba(0, 0, 0, .5);
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+p {
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 1.5;
+  padding-top: .6rem;
+  width: 100%;
+}
+
 .banner {
   position: relative;
-  text-align: left;
-  font-size: 1.5rem;
   max-height: 500px;
   overflow: hidden;
 }
@@ -28,26 +44,17 @@ body {
 .banner-content {
   position: absolute;
   bottom: 2em;
+  left: 50%;
   max-width: 50em;
-}
-
-.banner img {
+  padding-left: 1.75em;
   width: 100%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
 }
 
-.banner-content h1
+.banner-content h2,
 .banner-content p {
   margin: 0;
-}
-
-h1 {
-  background-color: rgba(0, 0, 0, .5);
-  color: #fff;
-  font-size: 4rem;
-}
-
-p {
-  color: #000;
-  font-size: 2rem;
-  font-style: italic;
 }
